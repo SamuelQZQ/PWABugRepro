@@ -13,6 +13,10 @@ const useStyles = makeStyles((theme) => ({
 		marginTop: 40,
 		textAlign: 'center',
 	},
+	des: {
+		margin: 20,
+		fontSize: 18,
+	},
 	logo: {
 		left: 'unset !important'
 	},
@@ -91,7 +95,7 @@ const Todo = () => {
 		>
 			<header>
 				<h1>RemoteCoco blocking wait bug repro</h1>
-				<div>This is a test app. It will use window.open API to open a new window.</div>
+				<div className={classes.des}>This is a test app. It will use window.open API to open a new window. Not everytime call window.open can repro this bug. But the URL I'm using in this demo app can always repro.</div>
 				{/* <Image
 					className={classes.logo}
 					src="/static/img/splashscreen-icon-384x384.png"
