@@ -91,6 +91,7 @@ const Todo = () => {
 		>
 			<header>
 				<h1>RemoteCoco blocking wait bug repro</h1>
+				<div>This is a test app. It will use window.open API to open a new window.</div>
 				{/* <Image
 					className={classes.logo}
 					src="/static/img/splashscreen-icon-384x384.png"
