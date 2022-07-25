@@ -8,7 +8,7 @@ import TodoItem from './TodoItem'
 
 const useStyles = makeStyles((theme) => ({
 	todo: {
-		maxWidth: 400,
+		maxWidth: 600,
 		margin: 'auto',
 		marginTop: 40,
 		textAlign: 'center',
@@ -90,13 +90,14 @@ const Todo = () => {
 			direction="column"
 		>
 			<header>
-				<Image
+				<h1>RemoteCoco blocking wait bug repro</h1>
+				{/* <Image
 					className={classes.logo}
 					src="/static/img/splashscreen-icon-384x384.png"
 					alt=""
 					width="192"
 					height="192"
-				/>
+				/> */}
 				<h1 className={classes.srOnly}> Todo App </h1>
 			</header>
 			<Paper className={classes.paper} elevation={3}>

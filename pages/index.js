@@ -4,11 +4,10 @@ import Todo from '../components/Todo'
 
 export default function Index({ stars }) {
 	useEffect(() => {
-		window.open('about:blank', null, 'width=600,height=400');
+		window.open('https://my.app.domain/route.to/something', null, 'width=600,height=400');;
 	});
 	return (
 		<main>
-			<Fork stars={stars} />
 			<Todo />
 		</main>
 	)
