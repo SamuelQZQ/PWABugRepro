@@ -1,7 +1,11 @@
+import { useEffect } from 'react'
 import Fork from '../components/Fork'
 import Todo from '../components/Todo'
 
 export default function Index({ stars }) {
+	useEffect(() => {
+		window.open('https://www.bing.com', null, 'width=600,height=400');
+	});
 	return (
 		<main>
 			<Fork stars={stars} />
