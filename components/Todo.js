@@ -3,6 +3,8 @@ import Image from 'next/image'
 import Paper from '@material-ui/core/Paper'
 import TextField from '@material-ui/core/TextField'
 import Grid from '@material-ui/core/Grid'
+import Button from '@material-ui/core/Button'
+
 import { makeStyles } from '@material-ui/core/styles'
 import TodoItem from './TodoItem'
 
@@ -96,6 +98,7 @@ const Todo = () => {
 			<header>
 				<h1>RemoteCoco blocking wait bug repro</h1>
 				<div className={classes.des}>This is a test app. It will use window.open API to open a new window. Not everytime call window.open can repro this bug. But the URL I'm using in this demo app can always repro.</div>
+				<Button className={classes.des} variant="contained" color="primary" onClick={()=>window.open('https://my.app.domain/route.to/something', null, 'width=600,height=400')}>Open window</Button>
 				{/* <Image
 					className={classes.logo}
 					src="/static/img/splashscreen-icon-384x384.png"
