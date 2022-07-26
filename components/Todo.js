@@ -35,6 +35,11 @@ const useStyles = makeStyles((theme) => ({
 	form: {
 		padding: theme.spacing(2),
 	},
+	butttt: {
+		margin: 20,
+		marginBottom: 40,
+		fontSize:20
+	},
 	list: {
 		listStyle: 'none',
 		padding: 0,
@@ -98,7 +103,7 @@ const Todo = () => {
 			<header>
 				<h1>RemoteCoco blocking wait bug repro</h1>
 				<div className={classes.des}>This is a test app. It will use window.open API to open a new window. Not everytime call window.open can repro this bug. But the URL I'm using in this demo app can always repro.</div>
-				<Button className={classes.des} variant="contained" color="primary" onClick={()=>window.open('https://my.app.domain/route.to/something', null, 'width=600,height=400')}>Open window</Button>
+				<Button className={classes.butttt} variant="contained" color="primary" onClick={()=>window.open('https://my.app.domain/route.to/something', null, 'width=600,height=400')}>Click to open window and repro the bug</Button>
 				{/* <Image
 					className={classes.logo}
 					src="/static/img/splashscreen-icon-384x384.png"
